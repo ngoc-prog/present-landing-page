@@ -6,83 +6,7 @@
     <title>DURI | Smart Baby Care Solutions from Korea</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Quicksand', sans-serif; scroll-behavior: smooth; }
-        .brand-blue { color: #333333; }
-        .bg-brand-blue { background-color: #333333; }
-        .bg-soft-blue { background-color: #F5F1ED; }
-        h1, h2, h3 { text-transform: uppercase; letter-spacing: 0.06em; }
-        
-        /* Gradient backgrounds */
-        .bg-gradient-soft { 
-            background: linear-gradient(135deg, #F5F1ED 0%, #E8E3DD 100%);
-        }
-        
-        /* Animated gradient */
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        
-        /* Floating animation */
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-        
-        .float-animation {
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        /* Number badge */
-        .number-badge {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #333333 0%, #555555 100%);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 1.25rem;
-            margin: 0 auto 1rem;
-        }
-        
-        /* Notification popup */
-        .notification-popup {
-            animation: slideInRight 0.5s ease-out;
-        }
-        
-        @keyframes slideInRight {
-            from {
-                transform: translateX(240px);
-                opacity: 0;
-            }
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-        
-        .notification-popup:hover {
-            transform: translateY(-2px);
-            transition: transform 0.2s ease;
-        }
-        
-        /* Shimmer effect */
-        .shimmer {
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
-            background-size: 200% 100%;
-            animation: shimmer 2s infinite;
-        }
-        
-        @keyframes shimmer {
-            0% { background-position: -200% 0; }
-            100% { background-position: 200% 0; }
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="text-gray-800 bg-white">
 
@@ -149,8 +73,18 @@
                         </a>
                     </div>
                 </div>
-                <div class="md:w-1/2 float-animation">
-                    <img src="images/anh1.jpeg" alt="DURI Baby" class="rounded-2xl shadow-2xl">
+                <div class="md:w-1/2 w-full flex justify-center mt-4 md:mt-0">
+                    <div class="hero-tvc-card">
+                        <div class="hero-media-shell">
+                            <div class="hero-tvc-frame">
+                                <video class="hero-tvc-video" autoplay muted loop playsinline preload="metadata" controls aria-label="TVC DURI">
+                                    <source src="images/TVC%20landing%20page.mp4" type="video/mp4">
+                                    Trinh duyet cua ban khong ho tro video.
+                                </video>
+                            </div>
+                        </div>
+                        <p class="hero-tvc-note">TVC DURI</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -673,32 +607,76 @@
         </section>
 
         <!-- Section 11 & 12: CTA & Form -->
-        <section id="form" class="py-24 bg-gradient-soft text-gray-900">
+        <section id="form" class="py-24 lead-form-shell text-white">
             <div class="container mx-auto px-6 flex flex-col md:flex-row gap-16 items-center">
                 <div class="md:w-1/2 text-center md:text-left">
-                    <h2 class="text-4xl font-bold mb-6">Nhận tư vấn cá nhân hóa</h2>
-                    <p class="text-gray-600 mb-10 text-lg">Đội ngũ chuyên gia sẽ gọi lại cho bạn trong 15 phút để tư vấn giải pháp phù hợp nhất với độ tuổi của bé.</p>
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full lead-badge text-xs font-bold uppercase tracking-wider mb-5">
+                        <span>Ưu tiên xử lý nhanh</span>
+                    </div>
+                    <h2 class="text-4xl font-bold mb-6">Đăng ký nhận tư vấn 1:1 miễn phí</h2>
+                    <p class="text-white/80 mb-10 text-lg">Điền form để nhận tư vấn đúng sản phẩm theo độ tuổi của bé. Chuyên gia DURI sẽ liên hệ trong 15 phút làm việc.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                        <div class="bg-white/10 border border-white/20 rounded-lg px-4 py-3">✓ Tư vấn đúng nhu cầu</div>
+                        <div class="bg-white/10 border border-white/20 rounded-lg px-4 py-3">✓ Báo giá ưu đãi theo khu vực</div>
+                        <div class="bg-white/10 border border-white/20 rounded-lg px-4 py-3">✓ Miễn phí vận chuyển toàn quốc</div>
+                        <div class="bg-white/10 border border-white/20 rounded-lg px-4 py-3">✓ Hỗ trợ sau mua hàng</div>
+                    </div>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <button class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg">SHOP NOW ON SHOPEE</button>
+                        <button class="mt-8 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg">SHOP NOW ON SHOPEE</button>
                     </div>
                 </div>
-                <div class="md:w-1/2 w-full max-w-md bg-white p-8 rounded-3xl shadow-2xl">
+                <div class="md:w-1/2 w-full max-w-lg lead-form-card p-8 rounded-3xl">
                     <form id="duriLandingForm" class="text-gray-800">
+                        <div class="text-center mb-6">
+                            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-900 text-white text-xs font-bold uppercase tracking-wider">Đăng ký nhận tư vấn</div>
+                            <p class="mt-3 text-sm text-gray-600">Vui lòng điền đầy đủ thông tin để đội ngũ DURI hỗ trợ nhanh nhất.</p>
+                        </div>
                         <div class="mb-4">
                             <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Họ và tên</label>
-                            <input type="text" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gray-400 outline-none">
+                            <input type="text" name="name" required class="lead-input w-full px-4 py-3 rounded-lg outline-none" placeholder="Nhập họ và tên của bạn">
                         </div>
                         <div class="mb-4">
                             <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Số điện thoại</label>
-                            <input type="tel" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gray-400 outline-none">
+                            <input type="tel" name="phone" required class="lead-input w-full px-4 py-3 rounded-lg outline-none" placeholder="Ví dụ: 09xx xxx xxx">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Email</label>
+                            <input type="email" name="email" required class="lead-input w-full px-4 py-3 rounded-lg outline-none" placeholder="you@example.com">
                         </div>
                         <div class="mb-6">
                             <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Độ tuổi của bé</label>
-                            <input type="text" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gray-400 outline-none">
+                            <select name="baby_age" required class="lead-input w-full px-4 py-3 rounded-lg outline-none">
+                                <option value="">Chọn độ tuổi</option>
+                                <option>0 - 6 tháng</option>
+                                <option>6 - 12 tháng</option>
+                                <option>1 - 2 tuổi</option>
+                                <option>2 - 4 tuổi</option>
+                                <option>Trên 4 tuổi</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Sản phẩm quan tâm</label>
+                            <select name="product_interest" required class="lead-input w-full px-4 py-3 rounded-lg outline-none">
+                                <option value="">Chọn sản phẩm</option>
+                                <option>Bô cho bé</option>
+                                <option>Khăn ướt cho bé</option>
+                                <option>Sản phẩm hỗ trợ cho bé bú</option>
+                                <option>Nội thất cho bé</option>
+                                <option>Đồ dùng tiện lợi khi di chuyển</option>
+                                <option>Đồ dùng nhà tắm cho bé</option>
+                                <option>Tôi cần tư vấn thêm</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Tỉnh/Thành phố</label>
+                            <select name="city" id="provinceCity" required class="lead-input w-full px-4 py-3 rounded-lg outline-none">
+                                <option value="">Đang tải dữ liệu tỉnh/thành...</option>
+                            </select>
                         </div>
                         <button type="submit" class="w-full bg-brand-blue text-white py-4 rounded-lg font-bold text-lg hover:bg-gray-700 transition shadow-lg">
-                            Gửi Yêu Cầu Tư Vấn
+                            Gửi Thông Tin Nhận Tư Vấn
                         </button>
+                        <p class="text-xs text-gray-500 mt-4 text-center">Thông tin của bạn được bảo mật và chỉ dùng để tư vấn sản phẩm.</p>
                     </form>
                 </div>
             </div>
@@ -726,7 +704,7 @@
                             <div>Trụ sở chính: Busan, Hàn Quốc</div>
                             <div>Văn phòng đại diện: 669 Đỗ Mười, Phường Linh Xuân, TP. Thủ Đức (TP. HCM)</div>
                             <div>Hotline: 037.355.159</div>
-                            <div>Email: partner@present.com</div>
+                            <div>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e3938291978d8691a393918690868d97cd808c8e">[email&#160;protected]</a></div>
                             <div>8:00 - 17:30 (Thứ 2 - Thứ 7)</div>
                         </div>
                     </div>
@@ -784,189 +762,9 @@
         </div>
     </div>
 
-    <script>
-        const landingForm = document.getElementById('duriLandingForm');
-        const mainContent = document.getElementById('main-content');
-        const thankYouPage = document.getElementById('thank-you-page');
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 
-        // Logic khi gửi Form
-        landingForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Ẩn trang chính và hiện trang cảm ơn
-            mainContent.classList.add('hidden');
-            thankYouPage.classList.remove('hidden');
-            thankYouPage.style.display = 'flex'; // Hiện linh hoạt theo layout flex
-            
-            window.scrollTo(0, 0);
-        });
 
-        // Hàm quay lại trang chủ từ trang cảm ơn
-        function backToHome() {
-            thankYouPage.classList.add('hidden');
-            thankYouPage.style.display = 'none';
-            mainContent.classList.remove('hidden');
-            window.scrollTo(0, 0);
-        }
-        
-        // Countdown Timer
-        const countdownEnd = new Date(Date.now() + 12 * 60 * 60 * 1000);
-
-        function updateCountdown() {
-            const now = new Date();
-            const diff = Math.max(0, countdownEnd - now);
-            
-            const hours = Math.floor(diff / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-            
-            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-        }
-        
-        // Update countdown every second
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-        
-        // Social Proof Notification Popup
-        const notifications = [
-            { name: 'Minh Anh', location: 'Hà Nội', time: '2 phút trước' },
-            { name: 'Thu Hà', location: 'TP.HCM', time: '5 phút trước' },
-            { name: 'Lan Phương', location: 'Đà Nẵng', time: '8 phút trước' },
-            { name: 'Ngọc Mai', location: 'Hải Phòng', time: '12 phút trước' }
-        ];
-        
-        let notificationIndex = 0;
-        
-        function showNotification() {
-            const notification = notifications[notificationIndex];
-            
-            // Create notification element
-            const notifEl = document.createElement('div');
-            notifEl.className = 'notification-popup fixed bottom-6 right-6 bg-white rounded-xl shadow-xl p-4 max-w-sm z-50 border border-gray-100';
-            notifEl.innerHTML = `
-                <div class="flex items-center gap-3">
-                    <div class="w-11 h-11 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
-                        ${notification.name.charAt(0)}
-                    </div>
-                    <div class="flex-1 min-w-0">
-                        <div class="font-semibold text-sm text-gray-900">${notification.name} vừa nhận tư vấn</div>
-                        <div class="text-xs text-gray-500 mt-1">${notification.location} • ${notification.time}</div>
-                    </div>
-                    <div class="text-green-500 text-xl">✓</div>
-                </div>
-            `;
-            
-            document.body.appendChild(notifEl);
-            
-            // Remove after 5 seconds
-            setTimeout(() => {
-                notifEl.style.opacity = '0';
-                notifEl.style.transition = 'opacity 0.5s ease-out';
-                setTimeout(() => notifEl.remove(), 500);
-            }, 5000);
-            
-            notificationIndex = (notificationIndex + 1) % notifications.length;
-        }
-        
-        // Show first notification after 3 seconds
-        setTimeout(showNotification, 3000);
-        
-        // Show notification every 15 seconds
-        setInterval(showNotification, 15000);
-        
-        // Navbar scroll effect
-        const navbar = document.getElementById('navbar');
-        const logo = document.getElementById('logo');
-        const navLinks = document.querySelectorAll('.nav-link');
-        const ctaButton = document.getElementById('cta-button');
-        
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 50) {
-                // Scrolled down - dark navbar
-                navbar.classList.remove('bg-white/90');
-                navbar.classList.add('bg-gray-900');
-                navbar.classList.add('shadow-xl');
-                
-                logo.classList.remove('brand-blue');
-                logo.classList.add('text-white');
-                
-                navLinks.forEach(link => {
-                    link.classList.remove('text-gray-800');
-                    link.classList.add('text-white');
-                });
-                
-                ctaButton.classList.remove('bg-brand-blue');
-                ctaButton.classList.add('bg-white');
-                ctaButton.classList.remove('text-white');
-                ctaButton.classList.add('text-gray-900');
-            } else {
-                // Top of page - light navbar
-                navbar.classList.remove('bg-gray-900');
-                navbar.classList.remove('shadow-xl');
-                navbar.classList.add('bg-white/90');
-                
-                logo.classList.remove('text-white');
-                logo.classList.add('brand-blue');
-                
-                navLinks.forEach(link => {
-                    link.classList.remove('text-white');
-                    link.classList.add('text-gray-800');
-                });
-                
-                ctaButton.classList.remove('bg-white');
-                ctaButton.classList.remove('text-gray-900');
-                ctaButton.classList.add('bg-brand-blue');
-                ctaButton.classList.add('text-white');
-            }
-        });
-
-        // Reviews carousel
-        const reviewsTrack = document.getElementById('reviews-track');
-        const reviewsPrev = document.getElementById('reviews-prev');
-        const reviewsNext = document.getElementById('reviews-next');
-        let reviewIndex = 0;
-
-        function getVisibleReviews() {
-            if (window.innerWidth >= 1024) return 3;
-            if (window.innerWidth >= 768) return 2;
-            return 1;
-        }
-
-        function updateReviewsCarousel() {
-            if (!reviewsTrack) return;
-            const cards = reviewsTrack.children;
-            if (!cards.length) return;
-
-            const styles = getComputedStyle(reviewsTrack);
-            const gap = parseFloat(styles.gap || styles.columnGap || '0');
-            const cardWidth = cards[0].getBoundingClientRect().width;
-            const step = cardWidth + gap;
-            const maxIndex = Math.max(0, cards.length - getVisibleReviews());
-
-            reviewIndex = Math.min(reviewIndex, maxIndex);
-            reviewsTrack.style.transform = `translateX(${-reviewIndex * step}px)`;
-
-            if (reviewsPrev) reviewsPrev.disabled = reviewIndex === 0;
-            if (reviewsNext) reviewsNext.disabled = reviewIndex === maxIndex;
-        }
-
-        if (reviewsPrev && reviewsNext) {
-            reviewsPrev.addEventListener('click', function() {
-                reviewIndex = Math.max(0, reviewIndex - 1);
-                updateReviewsCarousel();
-            });
-
-            reviewsNext.addEventListener('click', function() {
-                reviewIndex = reviewIndex + 1;
-                updateReviewsCarousel();
-            });
-        }
-
-        window.addEventListener('resize', updateReviewsCarousel);
-        updateReviewsCarousel();
-    </script>
-
+<script src="js/main.js"></script>
 </body>
 </html>
