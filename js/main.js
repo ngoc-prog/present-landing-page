@@ -210,7 +210,7 @@ const landingForm = document.getElementById('duriLandingForm');
         window.addEventListener('resize', updateReviewsCarousel);
         updateReviewsCarousel();
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbxqlgb6Ueh7Rk4cmQzLVu41JCj7B0EUbLNY1xaSrh1jATMPK-v-lYkDwUu9HGr65L12/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbzPRe9whAnULDo2CH2JdOqH0hcwbcbZximGqfpAoGOyJDBmY1_MMXmT6jYr23lizq6v/exec";
 
 document.getElementById("duriLandingForm").addEventListener("submit", function(e) {
   e.preventDefault();
