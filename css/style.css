@@ -1,8 +1,116 @@
-body { font-family: 'Quicksand', sans-serif; scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+}
+
+body { font-family: 'Quicksand', sans-serif; }
         .brand-blue { color: #333333; }
         .bg-brand-blue { background-color: #333333; }
         .bg-soft-blue { background-color: #F5F1ED; }
         h1, h2, h3 { text-transform: uppercase; letter-spacing: 0.06em; }
+
+        /* Hero visual direction */
+        .hero-stage {
+            background:
+                radial-gradient(1200px 560px at -8% -12%, rgba(255, 255, 255, 0.78), transparent 58%),
+                radial-gradient(820px 460px at 88% 22%, rgba(222, 210, 194, 0.45), transparent 62%),
+                radial-gradient(780px 420px at 80% 86%, rgba(255, 255, 255, 0.38), transparent 66%),
+                linear-gradient(120deg, #f7f3ef 0%, #ede5dc 45%, #e4ddd5 100%);
+        }
+
+        .hero-stage::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(120deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0) 36%),
+                repeating-linear-gradient(
+                    -32deg,
+                    rgba(255, 255, 255, 0.16) 0,
+                    rgba(255, 255, 255, 0.16) 1px,
+                    transparent 1px,
+                    transparent 22px
+                );
+            mix-blend-mode: soft-light;
+            opacity: 0.42;
+            pointer-events: none;
+        }
+
+        .hero-stage::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(214, 203, 190, 0.12) 100%);
+            opacity: 0.7;
+            pointer-events: none;
+        }
+
+        .hero-orb {
+            position: absolute;
+            border-radius: 9999px;
+            filter: blur(46px);
+            pointer-events: none;
+        }
+
+        .hero-orb-right {
+            top: 24px;
+            right: 90px;
+            width: 260px;
+            height: 260px;
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .hero-orb-left {
+            bottom: 10px;
+            left: 40px;
+            width: 360px;
+            height: 360px;
+            background: rgba(255, 255, 255, 0.22);
+        }
+
+        .hero-copy-wrap {
+            padding: 10px 2px 10px 4px;
+        }
+
+        .hero-flash-badge {
+            background: linear-gradient(90deg, #23272f 0%, #2d3748 100%);
+            box-shadow: 0 10px 26px rgba(23, 28, 37, 0.25);
+        }
+
+        .hero-title {
+            color: #111827;
+            text-shadow: 0 4px 16px rgba(255, 255, 255, 0.45);
+            letter-spacing: 0.045em;
+        }
+
+        .hero-subtitle {
+            color: #4b5563;
+            max-width: 34rem;
+        }
+
+        .hero-countdown {
+            border: 1px solid rgba(255, 255, 255, 0.75);
+            box-shadow: 0 18px 34px rgba(57, 64, 76, 0.14);
+        }
+
+        .hero-primary-cta {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            box-shadow: 0 16px 28px rgba(17, 24, 39, 0.28);
+        }
+
+        .hero-primary-cta:hover {
+            background: linear-gradient(135deg, #111827 0%, #030712 100%);
+        }
+
+        .hero-proof-card {
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(4px);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .hero-proof-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 24px rgba(40, 48, 63, 0.14);
+        }
         
         /* Gradient backgrounds */
         .bg-gradient-soft { 
@@ -122,61 +230,18 @@ body { font-family: 'Quicksand', sans-serif; scroll-behavior: smooth; }
         /* HERO TVC - Modern style */
 
 .hero-tvc-card {
-    width: min(100%, 420px);
+    width: min(100%, 430px);
     margin: 0 auto;
     position: relative;
-}
-
-/* glow background */
-.hero-tvc-card::before {
-    content: "";
-    position: absolute;
-    inset: -40px;
-    background: radial-gradient(circle at center, rgba(0,0,0,0.08), transparent 70%);
-    filter: blur(40px);
-    z-index: 0;
-}
-
-/* video container */
-.hero-media-shell {
-    position: relative;
-    z-index: 1;
-    padding: 14px;
-    border-radius: 28px;
-
-    background: linear-gradient(
-        135deg,
-        rgba(255,255,255,0.8),
-        rgba(255,255,255,0.4)
-    );
-
-    backdrop-filter: blur(12px);
-
-    box-shadow:
-        0 30px 60px rgba(0,0,0,0.12),
-        0 10px 20px rgba(0,0,0,0.08);
-}
-
-/* video frame */
-.hero-tvc-frame {
-    width: min(100%, 300px);
-    margin: 0 auto;
-
-    border-radius: 22px;
-    overflow: hidden;
-
-    aspect-ratio: 9 / 16;
-
-    background: #000;
-
-    box-shadow:
-        0 20px 40px rgba(0,0,0,0.25);
 }
 
 /* video */
 .hero-tvc-video {
-    width: 100%;
-    height: 100%;
+    width: min(100%, 370px);
+    margin-left: auto;
+    aspect-ratio: 9 / 16;
+    border-radius: 20px;
+    box-shadow: 0 24px 48px rgba(0,0,0,0.22);
     object-fit: cover;
     display: block;
 }
@@ -195,34 +260,41 @@ body { font-family: 'Quicksand', sans-serif; scroll-behavior: smooth; }
 }
 
 /* hover animation */
-.hero-tvc-card:hover .hero-media-shell {
-    transform: translateY(-6px) scale(1.02);
+.hero-tvc-card:hover .hero-tvc-video {
+    transform: translateY(-6px);
     transition: all 0.4s ease;
+}
+
+@media (min-width: 768px) {
+    .hero-tvc-card {
+        margin-left: auto;
+        transform: translateX(12px);
+    }
 }
 
 /* mobile */
 @media (max-width: 767px) {
 
-    .hero-tvc-frame {
-        width: min(100%, 260px);
+    .hero-tvc-video {
+        width: min(100%, 290px);
+        margin: 0 auto;
     }
 
 }
 
         @media (max-width: 767px) {
+            .hero-stage::before {
+                opacity: 0.15;
+            }
+
             .hero-tvc-card {
                 width: min(100%, 340px);
-            }
-
-            .hero-media-shell {
-                padding: 0 14px;
-            }
-
-            .hero-tvc-frame {
-                width: min(100%, 250px);
+                transform: none;
             }
 
             .hero-tvc-note {
                 width: min(100%, 250px);
+                margin-left: auto;
+                margin-right: auto;
             }
         }

@@ -29,25 +29,25 @@
         </nav>
 
         <!-- Section 1: Intro (Hero) -->
-        <section class="pt-32 pb-20 bg-gradient-soft relative overflow-hidden">
+        <section class="pt-32 pb-20 hero-stage relative overflow-hidden">
             <!-- Decorative circles -->
-            <div class="absolute top-20 right-20 w-64 h-64 bg-white/30 rounded-full blur-3xl"></div>
-            <div class="absolute bottom-20 left-20 w-96 h-96 bg-white/20 rounded-full blur-3xl"></div>
+            <div class="hero-orb hero-orb-right"></div>
+            <div class="hero-orb hero-orb-left"></div>
             
-            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center relative z-10">
-                <div class="md:w-1/2 mb-10 md:mb-0">
-                    <div class="inline-block bg-brand-blue text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center relative z-10 gap-6 lg:gap-6">
+                <div class="md:w-[54%] mb-10 md:mb-0 md:pr-4 hero-copy-wrap">
+                    <div class="inline-block hero-flash-badge text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
                         🔥 FLASH SALE - Giảm giá đến 30%
                     </div>
-                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6 text-gray-900 max-w-lg">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6 text-gray-900 max-w-xl hero-title">
                         DURI – Smart Baby Care Solutions from Korea
                     </h1>
-                    <p class="text-xl mb-6 text-gray-600 leading-relaxed max-w-lg">
+                    <p class="text-xl mb-6 text-gray-600 leading-relaxed max-w-xl hero-subtitle">
                         Đồng hành cùng 1 triệu cha mẹ, mang lại sự an tâm tuyệt đối cho sự phát triển của trẻ nhỏ.
                     </p>
                     
                     <!-- Countdown Timer -->
-                    <div class="bg-white/80 backdrop-blur p-4 rounded-xl inline-block mb-6 shadow-lg">
+                    <div class="hero-countdown bg-white/80 backdrop-blur p-4 rounded-xl inline-block mb-6 shadow-lg">
                         <div class="text-sm font-semibold text-gray-600 mb-2">⏰ Ưu đãi kết thúc sau:</div>
                         <div id="countdown" class="flex gap-4 text-center">
                             <div>
@@ -68,22 +68,31 @@
                     </div>
                     
                     <div>
-                        <a href="#form" class="bg-brand-blue text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg hover:scale-105 transition-transform inline-block hover:bg-gray-700">
+                        <a href="#form" class="hero-primary-cta bg-brand-blue text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg hover:scale-105 transition-transform inline-block hover:bg-gray-700">
                             Nhận Tư Vấn Miễn Phí
                         </a>
                     </div>
-                </div>
-                <div class="md:w-1/2 w-full flex justify-center mt-4 md:mt-0">
-                    <div class="hero-tvc-card">
-                        <div class="hero-media-shell">
-                            <div class="hero-tvc-frame">
-                                <video class="hero-tvc-video" autoplay muted loop playsinline preload="metadata" controls aria-label="TVC DURI">
-                                    <source src="images/TVC%20landing%20page.mp4" type="video/mp4">
-                                    Trinh duyet cua ban khong ho tro video.
-                                </video>
-                            </div>
+                    <div class="mt-6 grid grid-cols-3 gap-3 max-w-xl">
+                        <div class="hero-proof-card bg-white/70 rounded-lg px-3 py-3 text-center shadow-sm">
+                            <div class="text-xl font-bold text-gray-900">1M+</div>
+                            <div class="text-xs text-gray-600">Gia đình tin chọn</div>
                         </div>
-                        <p class="hero-tvc-note">TVC DURI</p>
+                        <div class="hero-proof-card bg-white/70 rounded-lg px-3 py-3 text-center shadow-sm">
+                            <div class="text-xl font-bold text-gray-900">24M</div>
+                            <div class="text-xs text-gray-600">Bảo hành chính hãng</div>
+                        </div>
+                        <div class="hero-proof-card bg-white/70 rounded-lg px-3 py-3 text-center shadow-sm">
+                            <div class="text-xl font-bold text-gray-900">15'</div>
+                            <div class="text-xs text-gray-600">Phản hồi tư vấn</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-[46%] w-full flex justify-center md:justify-end mt-4 md:mt-0">
+                    <div class="hero-tvc-card">
+                        <video class="hero-tvc-video" autoplay muted loop playsinline preload="metadata" controls aria-label="TVC DURI">
+                            <source src="images/TVC%20landing%20page.mp4" type="video/mp4">
+                            Trinh duyet cua ban khong ho tro video.
+                        </video>
                     </div>
                 </div>
             </div>
