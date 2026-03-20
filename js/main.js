@@ -158,12 +158,25 @@ const N8N_WEBHOOK = "https://durimallvn.app.n8n.cloud/webhook/b0666c6c-de60-4390
 const N8N_EMAIL_WEBHOOK = "https://durimallvn.app.n8n.cloud/webhook/duri-ai-email";
 
 document.getElementById("duriLandingForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
 
     const mainContent = document.getElementById('main-content');
     const thankYouPage = document.getElementById('thank-you-page');
 
+    try { gtag('event', 'generate_lead', { event_category: 'form', event_label: 'DURI Landing Form', value: 1 }); } catch (e) { }
+
+    var formEl = this;
+    var jsonData = {
+        name: formEl.querySelector('[name="name"]').value,
+        phone: formEl.querySelector('[name="phone"]').value,
+        email: formEl.querySelector('[name="email"]').value,
+        baby_age: formEl.querySelector('[name="baby_age"]').value,
+        product_interest: formEl.querySelector('[name="product_interest"]').value,
+        city: formEl.querySelector('[name="city"]').value,
+        source: "landing_page"
+    };
+
     try {
-        // Gửi cả 3 song song, chờ tất cả xong
         await Promise.allSettled([
             fetch(scriptURL, {
                 method: "POST",
@@ -186,12 +199,17 @@ document.getElementById("duriLandingForm").addEventListener("submit", async func
         console.error("Lỗi webhook:", err);
     }
 
-    // Hiện thank you page SAU KHI tất cả đã gửi xong
     mainContent.classList.add('hidden');
     thankYouPage.classList.remove('hidden');
     thankYouPage.style.display = 'flex';
     window.scrollTo(0, 0);
 });
+// Hiện thank you page SAU KHI tất cả đã gửi xong
+mainContent.classList.add('hidden');
+thankYouPage.classList.remove('hidden');
+thankYouPage.style.display = 'flex';
+window.scrollTo(0, 0);
+
 // Gửi Google Sheet
 fetch(scriptURL, {
     method: "POST",
