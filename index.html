@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,53 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Google Analytics 4 trực tiếp -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YL45FKG8DG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YL45FKG8DG');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PF7ZWMLL');</script>
+    <!-- End Google Tag Manager -->
 </head>
+
 <body class="text-gray-800 bg-white">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF7ZWMLL" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- PHẦN 1: NỘI DUNG CHÍNH (Hiển thị mặc định) -->
     <div id="main-content">
         <!-- Navigation -->
-        <nav id="navbar" class="fixed w-full bg-white/90 backdrop-blur-md z-50 py-4 shadow-sm transition-all duration-300">
+        <nav id="navbar"
+            class="fixed w-full bg-white/90 backdrop-blur-md z-50 py-4 shadow-sm transition-all duration-300">
             <div class="container mx-auto px-6 flex justify-between items-center">
-                <div id="logo" class="text-2xl font-bold brand-blue tracking-tighter transition-colors duration-300">DURI</div>
+                <div id="logo" class="text-2xl font-bold brand-blue tracking-tighter transition-colors duration-300">
+                    DURI</div>
                 <div id="nav-links" class="hidden md:flex space-x-8 text-sm font-semibold uppercase text-gray-800">
                     <a href="#features" class="nav-link hover:text-blue-500 transition-colors duration-300">Sản phẩm</a>
                     <a href="#pricing" class="nav-link hover:text-blue-500 transition-colors duration-300">Ưu đãi</a>
-                    <a href="#certification" class="nav-link hover:text-blue-500 transition-colors duration-300">Chứng nhận</a>
+                    <a href="#certification" class="nav-link hover:text-blue-500 transition-colors duration-300">Chứng
+                        nhận</a>
                     <a href="#reviews" class="nav-link hover:text-blue-500 transition-colors duration-300">Đánh giá</a>
                     <a href="#faq" class="nav-link hover:text-blue-500 transition-colors duration-300">FAQ</a>
                     <a href="#form" class="nav-link hover:text-blue-500 transition-colors duration-300">Liên hệ</a>
                 </div>
-                <a href="#form" id="cta-button" class="bg-brand-blue text-white px-6 py-2 rounded-full font-bold hover:bg-gray-700 transition-all shadow-md">Tư Vấn Ngay</a>
+                <a href="#form" id="cta-button"
+                    class="bg-brand-blue text-white px-6 py-2 rounded-full font-bold hover:bg-gray-700 transition-all shadow-md">Tư
+                    Vấn Ngay</a>
             </div>
         </nav>
 
@@ -33,7 +63,7 @@
             <!-- Decorative circles -->
             <div class="hero-orb hero-orb-right"></div>
             <div class="hero-orb hero-orb-left"></div>
-            
+
             <div class="container mx-auto px-6 flex flex-col md:flex-row items-center relative z-10 gap-6 lg:gap-6">
                 <div class="md:w-[54%] mb-10 md:mb-0 md:pr-4 hero-copy-wrap">
                     <div class="inline-block hero-flash-badge text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
@@ -45,7 +75,7 @@
                     <p class="text-xl mb-6 text-gray-600 leading-relaxed max-w-xl hero-subtitle">
                         Đồng hành cùng 1 triệu cha mẹ, mang lại sự an tâm tuyệt đối cho sự phát triển của trẻ nhỏ.
                     </p>
-                    
+
                     <!-- Countdown Timer -->
                     <div class="hero-countdown bg-white/80 backdrop-blur p-4 rounded-xl inline-block mb-6 shadow-lg">
                         <div class="text-sm font-semibold text-gray-600 mb-2">⏰ Ưu đãi kết thúc sau:</div>
@@ -66,9 +96,10 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div>
-                        <a href="#form" class="hero-primary-cta bg-brand-blue text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg hover:scale-105 transition-transform inline-block hover:bg-gray-700">
+                        <a href="#form"
+                            class="hero-primary-cta bg-brand-blue text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg hover:scale-105 transition-transform inline-block hover:bg-gray-700">
                             Nhận Tư Vấn Miễn Phí
                         </a>
                     </div>
@@ -89,7 +120,8 @@
                 </div>
                 <div class="md:w-[46%] w-full flex justify-center md:justify-end mt-4 md:mt-0">
                     <div class="hero-tvc-card">
-                        <video class="hero-tvc-video" autoplay muted loop playsinline preload="metadata" controls aria-label="TVC DURI">
+                        <video class="hero-tvc-video" autoplay muted loop playsinline preload="metadata" controls
+                            aria-label="TVC DURI">
                             <source src="images/TVC%20landing%20page.mp4" type="video/mp4">
                             Trinh duyet cua ban khong ho tro video.
                         </video>
@@ -104,20 +136,26 @@
                 <h2 class="text-3xl font-bold mb-4">Tại sao cha mẹ tin dùng DURI?</h2>
                 <p class="text-gray-600 mb-16 text-lg">Được hơn 1 triệu gia đình trên thế giới lựa chọn</p>
                 <div class="grid md:grid-cols-3 gap-10">
-                    <div class="p-8 rounded-2xl bg-gradient-soft border border-gray-100 shadow-xl hover:-translate-y-2 transition-all hover:shadow-2xl">
+                    <div
+                        class="p-8 rounded-2xl bg-gradient-soft border border-gray-100 shadow-xl hover:-translate-y-2 transition-all hover:shadow-2xl">
                         <div class="number-badge">01</div>
                         <h3 class="text-xl font-bold mb-4">An Toàn Tuyệt Đối</h3>
-                        <p class="text-gray-600 text-sm">Kháng khuẩn 99.9% và hệ thống lọc 3 giai đoạn loại bỏ hoàn toàn tạp chất.</p>
+                        <p class="text-gray-600 text-sm">Kháng khuẩn 99.9% và hệ thống lọc 3 giai đoạn loại bỏ hoàn toàn
+                            tạp chất.</p>
                     </div>
-                    <div class="p-8 rounded-2xl bg-gradient-soft border border-gray-100 shadow-xl hover:-translate-y-2 transition-all hover:shadow-2xl">
+                    <div
+                        class="p-8 rounded-2xl bg-gradient-soft border border-gray-100 shadow-xl hover:-translate-y-2 transition-all hover:shadow-2xl">
                         <div class="number-badge">02</div>
                         <h3 class="text-xl font-bold mb-4">Tiết Kiệm Thời Gian</h3>
-                        <p class="text-gray-600 text-sm">Thiết kế thông minh giúp việc vệ sinh cho bé trở nên nhẹ nhàng, nhanh chóng.</p>
+                        <p class="text-gray-600 text-sm">Thiết kế thông minh giúp việc vệ sinh cho bé trở nên nhẹ nhàng,
+                            nhanh chóng.</p>
                     </div>
-                    <div class="p-8 rounded-2xl bg-gradient-soft border border-gray-100 shadow-xl hover:-translate-y-2 transition-all hover:shadow-2xl">
+                    <div
+                        class="p-8 rounded-2xl bg-gradient-soft border border-gray-100 shadow-xl hover:-translate-y-2 transition-all hover:shadow-2xl">
                         <div class="number-badge">03</div>
                         <h3 class="text-xl font-bold mb-4">Tiết Kiệm Chi Phí</h3>
-                        <p class="text-gray-600 text-sm">Vòi sen Eco-friendly giúp giảm tới 30% lượng nước tiêu thụ hàng tháng.</p>
+                        <p class="text-gray-600 text-sm">Vòi sen Eco-friendly giúp giảm tới 30% lượng nước tiêu thụ hàng
+                            tháng.</p>
                     </div>
                 </div>
             </div>
@@ -128,10 +166,11 @@
             <!-- Decorative elements -->
             <div class="absolute top-0 left-0 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-30"></div>
             <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-50 rounded-full blur-3xl opacity-30"></div>
-            
+
             <div class="container mx-auto px-6 relative z-10">
                 <div class="text-center mb-16">
-                    <div class="inline-block px-6 py-2 bg-gradient-soft rounded-full text-sm font-bold text-gray-600 mb-4">
+                    <div
+                        class="inline-block px-6 py-2 bg-gradient-soft rounded-full text-sm font-bold text-gray-600 mb-4">
                         ✨ SẢN PHẨM NỔI BẬT
                     </div>
                     <h2 class="text-4xl font-bold mb-4">
@@ -140,24 +179,31 @@
                     </h2>
                     <p class="text-gray-600 text-lg">Thiết kế dành riêng cho trẻ em Việt Nam</p>
                 </div>
-                
+
                 <!-- Product 1: Potty Seat -->
                 <div class="flex flex-col md:flex-row items-center mb-20 gap-12">
                     <div class="md:w-1/2">
                         <div class="relative group">
-                            <div class="absolute inset-0 bg-gradient-to-br from-blue-100 to-purple-100 rounded-3xl transform rotate-3 group-hover:rotate-6 transition-transform"></div>
-                            <img src="images/pottyseat4.0.jpg" alt="Potty Seat" class="relative rounded-3xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-blue-100 to-purple-100 rounded-3xl transform rotate-3 group-hover:rotate-6 transition-transform">
+                            </div>
+                            <img src="images/pottyseat4.0.jpg" alt="Potty Seat"
+                                class="relative rounded-3xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
                     <div class="md:w-1/2">
-                        <div class="inline-block bg-blue-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">
+                        <div
+                            class="inline-block bg-blue-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">
                             Flagship Product
                         </div>
                         <h3 class="text-4xl font-bold mb-6 text-gray-900">DURI Potty Seat 4.0</h3>
-                        <p class="text-gray-600 mb-8 text-lg">Giải pháp toilet training thông minh, giúp bé tự lập từ sớm</p>
+                        <p class="text-gray-600 mb-8 text-lg">Giải pháp toilet training thông minh, giúp bé tự lập từ
+                            sớm</p>
                         <ul class="space-y-4">
-                            <li class="flex items-start gap-3 p-4 bg-gradient-soft rounded-xl hover:shadow-md transition">
-                                <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <li
+                                class="flex items-start gap-3 p-4 bg-gradient-soft rounded-xl hover:shadow-md transition">
+                                <div
+                                    class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                     <span class="text-white text-xs">✓</span>
                                 </div>
                                 <div>
@@ -165,17 +211,22 @@
                                     <div class="text-sm text-gray-600">Thiết kế 2 trong 1 tiện lợi</div>
                                 </div>
                             </li>
-                            <li class="flex items-start gap-3 p-4 bg-gradient-soft rounded-xl hover:shadow-md transition">
-                                <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <li
+                                class="flex items-start gap-3 p-4 bg-gradient-soft rounded-xl hover:shadow-md transition">
+                                <div
+                                    class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                     <span class="text-white text-xs">✓</span>
                                 </div>
                                 <div>
-                                    <div class="font-bold text-gray-900">Nút bấm âm thanh vui nhộn giúp bé thích thú</div>
+                                    <div class="font-bold text-gray-900">Nút bấm âm thanh vui nhộn giúp bé thích thú
+                                    </div>
                                     <div class="text-sm text-gray-600">Kích thích hứng thú cho bé</div>
                                 </div>
                             </li>
-                            <li class="flex items-start gap-3 p-4 bg-gradient-soft rounded-xl hover:shadow-md transition">
-                                <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <li
+                                class="flex items-start gap-3 p-4 bg-gradient-soft rounded-xl hover:shadow-md transition">
+                                <div
+                                    class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                     <span class="text-white text-xs">✓</span>
                                 </div>
                                 <div>
@@ -183,8 +234,10 @@
                                     <div class="text-sm text-gray-600">Bám chắc, không di chuyển</div>
                                 </div>
                             </li>
-                            <li class="flex items-start gap-3 p-4 bg-gradient-soft rounded-xl hover:shadow-md transition">
-                                <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <li
+                                class="flex items-start gap-3 p-4 bg-gradient-soft rounded-xl hover:shadow-md transition">
+                                <div
+                                    class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                     <span class="text-white text-xs">✓</span>
                                 </div>
                                 <div>
@@ -200,28 +253,37 @@
                 <div class="flex flex-col md:flex-row-reverse items-center gap-12">
                     <div class="md:w-1/2">
                         <div class="relative group">
-                            <div class="absolute inset-0 bg-gradient-to-br from-purple-100 to-pink-100 rounded-3xl transform -rotate-3 group-hover:-rotate-6 transition-transform"></div>
-                            <img src="images/ato.jpg" alt="Showerhead" class="relative rounded-3xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-purple-100 to-pink-100 rounded-3xl transform -rotate-3 group-hover:-rotate-6 transition-transform">
+                            </div>
+                            <img src="images/ato.jpg" alt="Showerhead"
+                                class="relative rounded-3xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
                     <div class="md:w-1/2">
-                        <div class="inline-block bg-purple-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">
+                        <div
+                            class="inline-block bg-purple-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">
                             Premium Filter
                         </div>
                         <h3 class="text-4xl font-bold mb-6 text-gray-900">Ultra Ato Filter Showerhead</h3>
                         <p class="text-gray-600 mb-8 text-lg">Bảo vệ làn da nhạy cảm của bé với công nghệ lọc 3 tầng</p>
                         <ul class="space-y-4">
-                            <li class="flex items-start gap-3 p-4 bg-gradient-soft rounded-xl hover:shadow-md transition">
-                                <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <li
+                                class="flex items-start gap-3 p-4 bg-gradient-soft rounded-xl hover:shadow-md transition">
+                                <div
+                                    class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                     <span class="text-white text-xs">✓</span>
                                 </div>
                                 <div>
-                                    <div class="font-bold text-gray-900">Lọc 3 tầng (Sediment - Kháng khuẩn - Carbon)</div>
+                                    <div class="font-bold text-gray-900">Lọc 3 tầng (Sediment - Kháng khuẩn - Carbon)
+                                    </div>
                                     <div class="text-sm text-gray-600">Công nghệ lọc hiện đại từ Hàn Quốc</div>
                                 </div>
                             </li>
-                            <li class="flex items-start gap-3 p-4 bg-gradient-soft rounded-xl hover:shadow-md transition">
-                                <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <li
+                                class="flex items-start gap-3 p-4 bg-gradient-soft rounded-xl hover:shadow-md transition">
+                                <div
+                                    class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                     <span class="text-white text-xs">✓</span>
                                 </div>
                                 <div>
@@ -229,8 +291,10 @@
                                     <div class="text-sm text-gray-600">Bảo vệ da khỏi kích ứng</div>
                                 </div>
                             </li>
-                            <li class="flex items-start gap-3 p-4 bg-gradient-soft rounded-xl hover:shadow-md transition">
-                                <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <li
+                                class="flex items-start gap-3 p-4 bg-gradient-soft rounded-xl hover:shadow-md transition">
+                                <div
+                                    class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                     <span class="text-white text-xs">✓</span>
                                 </div>
                                 <div>
@@ -238,8 +302,10 @@
                                     <div class="text-sm text-gray-600">Đạt tiêu chuẩn quốc tế</div>
                                 </div>
                             </li>
-                            <li class="flex items-start gap-3 p-4 bg-gradient-soft rounded-xl hover:shadow-md transition">
-                                <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <li
+                                class="flex items-start gap-3 p-4 bg-gradient-soft rounded-xl hover:shadow-md transition">
+                                <div
+                                    class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                     <span class="text-white text-xs">✓</span>
                                 </div>
                                 <div>
@@ -278,19 +344,23 @@
                     </div>
                 </div>
                 <div class="relative">
-                    <button id="reviews-prev" type="button" aria-label="Xem đánh giá trước" class="hidden md:flex items-center justify-center absolute -left-12 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-lg text-gray-700 hover:text-gray-900 transition disabled:opacity-40 disabled:cursor-not-allowed">
+                    <button id="reviews-prev" type="button" aria-label="Xem đánh giá trước"
+                        class="hidden md:flex items-center justify-center absolute -left-12 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-lg text-gray-700 hover:text-gray-900 transition disabled:opacity-40 disabled:cursor-not-allowed">
                         <span class="text-2xl">‹</span>
                     </button>
-                    <button id="reviews-next" type="button" aria-label="Xem đánh giá tiếp theo" class="hidden md:flex items-center justify-center absolute -right-12 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-lg text-gray-700 hover:text-gray-900 transition disabled:opacity-40 disabled:cursor-not-allowed">
+                    <button id="reviews-next" type="button" aria-label="Xem đánh giá tiếp theo"
+                        class="hidden md:flex items-center justify-center absolute -right-12 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-lg text-gray-700 hover:text-gray-900 transition disabled:opacity-40 disabled:cursor-not-allowed">
                         <span class="text-2xl">›</span>
                     </button>
                     <div class="overflow-hidden">
                         <div id="reviews-track" class="flex gap-6 transition-transform duration-500">
                             <!-- Review 1 -->
-                            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all min-w-[280px] md:min-w-[320px] lg:min-w-[360px]">
+                            <div
+                                class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all min-w-[280px] md:min-w-[320px] lg:min-w-[360px]">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-4">
-                                        <div class="w-12 h-12 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center text-white font-bold">
+                                        <div
+                                            class="w-12 h-12 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center text-white font-bold">
                                             L
                                         </div>
                                         <div>
@@ -303,17 +373,20 @@
                                     </div>
                                     <div class="text-yellow-500 mb-2">★★★★★</div>
                                     <p class="text-gray-700 text-sm leading-relaxed mb-3">
-                                        "Công nghệ Hàn Quốc giúp mình hoàn toàn yên tâm. Da bé nhạy cảm nên vòi sen lọc nước DURI đúng là cứu tinh! 💙"
+                                        "Công nghệ Hàn Quốc giúp mình hoàn toàn yên tâm. Da bé nhạy cảm nên vòi sen lọc
+                                        nước DURI đúng là cứu tinh! 💙"
                                     </p>
                                     <div class="text-xs text-gray-400">1.2k người thích</div>
                                 </div>
                             </div>
-                            
+
                             <!-- Review 2 -->
-                            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all min-w-[280px] md:min-w-[320px] lg:min-w-[360px]">
+                            <div
+                                class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all min-w-[280px] md:min-w-[320px] lg:min-w-[360px]">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-4">
-                                        <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                                        <div
+                                            class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">
                                             M
                                         </div>
                                         <div>
@@ -326,17 +399,20 @@
                                     </div>
                                     <div class="text-yellow-500 mb-2">★★★★★</div>
                                     <p class="text-gray-700 text-sm leading-relaxed mb-3">
-                                        "Nắp bồn cầu thiết kế cực kỳ chắc chắn, bé nhà mình tự đi vệ sinh mà không cần mẹ bế. Quá tiện! 👶"
+                                        "Nắp bồn cầu thiết kế cực kỳ chắc chắn, bé nhà mình tự đi vệ sinh mà không cần
+                                        mẹ bế. Quá tiện! 👶"
                                     </p>
                                     <div class="text-xs text-gray-400">850 người thích</div>
                                 </div>
                             </div>
-                            
+
                             <!-- Review 3 -->
-                            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all min-w-[280px] md:min-w-[320px] lg:min-w-[360px]">
+                            <div
+                                class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all min-w-[280px] md:min-w-[320px] lg:min-w-[360px]">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-4">
-                                        <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                                        <div
+                                            class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
                                             H
                                         </div>
                                         <div>
@@ -349,17 +425,20 @@
                                     </div>
                                     <div class="text-yellow-500 mb-2">★★★★★</div>
                                     <p class="text-gray-700 text-sm leading-relaxed mb-3">
-                                        "Bao bì đẹp, sản phẩm chất lượng. Con nhà mình rất thích ghế potty, giờ đi vệ sinh tự lập hẳn! ✨"
+                                        "Bao bì đẹp, sản phẩm chất lượng. Con nhà mình rất thích ghế potty, giờ đi vệ
+                                        sinh tự lập hẳn! ✨"
                                     </p>
                                     <div class="text-xs text-gray-400">2.1k người thích</div>
                                 </div>
                             </div>
 
                             <!-- Review 4 -->
-                            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all min-w-[280px] md:min-w-[320px] lg:min-w-[360px]">
+                            <div
+                                class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all min-w-[280px] md:min-w-[320px] lg:min-w-[360px]">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-4">
-                                        <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center text-white font-bold">
+                                        <div
+                                            class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center text-white font-bold">
                                             T
                                         </div>
                                         <div>
@@ -372,17 +451,20 @@
                                     </div>
                                     <div class="text-yellow-500 mb-2">★★★★★</div>
                                     <p class="text-gray-700 text-sm leading-relaxed mb-3">
-                                        "Vòi sen lọc nước dễ lắp, nước ra êm dịu. Bé tắm xong da không bị khô như trước." 
+                                        "Vòi sen lọc nước dễ lắp, nước ra êm dịu. Bé tắm xong da không bị khô như
+                                        trước."
                                     </p>
                                     <div class="text-xs text-gray-400">640 người thích</div>
                                 </div>
                             </div>
 
                             <!-- Review 5 -->
-                            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all min-w-[280px] md:min-w-[320px] lg:min-w-[360px]">
+                            <div
+                                class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all min-w-[280px] md:min-w-[320px] lg:min-w-[360px]">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-4">
-                                        <div class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold">
+                                        <div
+                                            class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold">
                                             N
                                         </div>
                                         <div>
@@ -395,17 +477,19 @@
                                     </div>
                                     <div class="text-yellow-500 mb-2">★★★★★</div>
                                     <p class="text-gray-700 text-sm leading-relaxed mb-3">
-                                        "Ghế potty chắc chắn, bé tự ngồi vững. Mình thích nhất phần đệm chống trượt." 
+                                        "Ghế potty chắc chắn, bé tự ngồi vững. Mình thích nhất phần đệm chống trượt."
                                     </p>
                                     <div class="text-xs text-gray-400">990 người thích</div>
                                 </div>
                             </div>
 
                             <!-- Review 6 -->
-                            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all min-w-[280px] md:min-w-[320px] lg:min-w-[360px]">
+                            <div
+                                class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all min-w-[280px] md:min-w-[320px] lg:min-w-[360px]">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-4">
-                                        <div class="w-12 h-12 bg-gradient-to-br from-sky-400 to-sky-600 rounded-full flex items-center justify-center text-white font-bold">
+                                        <div
+                                            class="w-12 h-12 bg-gradient-to-br from-sky-400 to-sky-600 rounded-full flex items-center justify-center text-white font-bold">
                                             P
                                         </div>
                                         <div>
@@ -418,17 +502,19 @@
                                     </div>
                                     <div class="text-yellow-500 mb-2">★★★★★</div>
                                     <p class="text-gray-700 text-sm leading-relaxed mb-3">
-                                        "Combo quá tiện, vừa potty vừa vòi sen. Mua một lần dùng lâu dài." 
+                                        "Combo quá tiện, vừa potty vừa vòi sen. Mua một lần dùng lâu dài."
                                     </p>
                                     <div class="text-xs text-gray-400">1.5k người thích</div>
                                 </div>
                             </div>
 
                             <!-- Review 7 -->
-                            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all min-w-[280px] md:min-w-[320px] lg:min-w-[360px]">
+                            <div
+                                class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all min-w-[280px] md:min-w-[320px] lg:min-w-[360px]">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-4">
-                                        <div class="w-12 h-12 bg-gradient-to-br from-rose-400 to-rose-600 rounded-full flex items-center justify-center text-white font-bold">
+                                        <div
+                                            class="w-12 h-12 bg-gradient-to-br from-rose-400 to-rose-600 rounded-full flex items-center justify-center text-white font-bold">
                                             A
                                         </div>
                                         <div>
@@ -441,17 +527,19 @@
                                     </div>
                                     <div class="text-yellow-500 mb-2">★★★★★</div>
                                     <p class="text-gray-700 text-sm leading-relaxed mb-3">
-                                        "Bé nhà mình sợ tắm, nhưng đổi sang vòi lọc DURI thì hợp tác hơn hẳn." 
+                                        "Bé nhà mình sợ tắm, nhưng đổi sang vòi lọc DURI thì hợp tác hơn hẳn."
                                     </p>
                                     <div class="text-xs text-gray-400">720 người thích</div>
                                 </div>
                             </div>
 
                             <!-- Review 8 -->
-                            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all min-w-[280px] md:min-w-[320px] lg:min-w-[360px]">
+                            <div
+                                class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all min-w-[280px] md:min-w-[320px] lg:min-w-[360px]">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 mb-4">
-                                        <div class="w-12 h-12 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold">
+                                        <div
+                                            class="w-12 h-12 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold">
                                             V
                                         </div>
                                         <div>
@@ -464,7 +552,7 @@
                                     </div>
                                     <div class="text-yellow-500 mb-2">★★★★★</div>
                                     <p class="text-gray-700 text-sm leading-relaxed mb-3">
-                                        "Hàng đẹp, đóng gói chắc chắn. Giao nhanh, tư vấn kỹ." 
+                                        "Hàng đẹp, đóng gói chắc chắn. Giao nhanh, tư vấn kỹ."
                                     </p>
                                     <div class="text-xs text-gray-400">530 người thích</div>
                                 </div>
@@ -502,25 +590,30 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="grid grid-cols-5 gap-8 pt-12 border-t border-gray-200">
                     <div class="text-center px-4 flex flex-col items-center justify-between h-full">
                         <div class="text-sm font-semibold text-gray-600 mb-2 min-h-[48px]">Quyền sở hữu<br>trí tuệ</div>
                         <div class="text-5xl font-bold text-gray-900">104<sup class="text-2xl">+</sup></div>
                     </div>
-                    <div class="text-center px-4 flex flex-col items-center justify-between h-full border-l border-gray-200">
+                    <div
+                        class="text-center px-4 flex flex-col items-center justify-between h-full border-l border-gray-200">
                         <div class="text-sm font-semibold text-gray-600 mb-2 min-h-[48px]">Bằng sáng chế</div>
                         <div class="text-5xl font-bold text-gray-900">3<sup class="text-2xl">+</sup></div>
                     </div>
-                    <div class="text-center px-4 flex flex-col items-center justify-between h-full border-l border-gray-200">
-                        <div class="text-sm font-semibold text-gray-600 mb-2 min-h-[48px]">Kiểu dáng công nghiệp<br>& thiết kế</div>
+                    <div
+                        class="text-center px-4 flex flex-col items-center justify-between h-full border-l border-gray-200">
+                        <div class="text-sm font-semibold text-gray-600 mb-2 min-h-[48px]">Kiểu dáng công nghiệp<br>&
+                            thiết kế</div>
                         <div class="text-5xl font-bold text-gray-900">45<sup class="text-2xl">+</sup></div>
                     </div>
-                    <div class="text-center px-4 flex flex-col items-center justify-between h-full border-l border-gray-200">
+                    <div
+                        class="text-center px-4 flex flex-col items-center justify-between h-full border-l border-gray-200">
                         <div class="text-sm font-semibold text-gray-600 mb-2 min-h-[48px]">Thương hiệu<br>quốc tế</div>
                         <div class="text-5xl font-bold text-gray-900">43<sup class="text-2xl">+</sup></div>
                     </div>
-                    <div class="text-center px-4 flex flex-col items-center justify-between h-full border-l border-gray-200">
+                    <div
+                        class="text-center px-4 flex flex-col items-center justify-between h-full border-l border-gray-200">
                         <div class="text-sm font-semibold text-gray-600 mb-2 min-h-[48px]">Bản quyền</div>
                         <div class="text-5xl font-bold text-gray-900">13<sup class="text-2xl">+</sup></div>
                     </div>
@@ -535,36 +628,47 @@
                 <p class="text-center text-gray-600 mb-16">🎁 Miễn phí vận chuyển toàn quốc - Bảo hành 24 tháng</p>
                 <div class="grid md:grid-cols-3 gap-8">
                     <!-- Basic -->
-                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center flex flex-col h-full transform hover:-translate-y-2 hover:ring-2 hover:ring-gray-300">
+                    <div
+                        class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center flex flex-col h-full transform hover:-translate-y-2 hover:ring-2 hover:ring-gray-300">
                         <h3 class="font-bold text-gray-500 uppercase mb-4 text-sm tracking-widest">Cơ bản</h3>
-                        <div class="mb-6 flex items-center justify-center bg-gradient-soft rounded-xl p-4" style="height:200px;">
-                            <img src="images/pottyseat4.0.jpg" alt="DURI Potty Seat 4.0" class="max-h-full max-w-full object-contain">
+                        <div class="mb-6 flex items-center justify-center bg-gradient-soft rounded-xl p-4"
+                            style="height:200px;">
+                            <img src="images/pottyseat4.0.jpg" alt="DURI Potty Seat 4.0"
+                                class="max-h-full max-w-full object-contain">
                         </div>
                         <div class="text-2xl font-bold mb-4">DURI Potty Seat 4.0</div>
                         <div class="text-sm text-gray-600 mb-6">Giải pháp toilet training thông minh</div>
-                        <a href="#form" class="block py-4 border-2 border-brand-blue brand-blue font-bold rounded-xl hover:bg-brand-blue hover:text-white transition-all mt-auto text-lg">Chọn Gói →</a>
+                        <a href="#form"
+                            class="block py-4 border-2 border-brand-blue brand-blue font-bold rounded-xl hover:bg-brand-blue hover:text-white transition-all mt-auto text-lg">Chọn
+                            Gói →</a>
                     </div>
                     <!-- Premium -->
-                    <div class="bg-white p-8 rounded-3xl shadow-2xl text-center border-4 border-brand-blue relative flex flex-col h-full transform scale-105 transition-all duration-300 hover:-translate-y-2 hover:scale-[1.07] hover:shadow-2xl">
-                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest animate-pulse">
+                    <div
+                        class="bg-white p-8 rounded-3xl shadow-2xl text-center border-4 border-brand-blue relative flex flex-col h-full transform scale-105 transition-all duration-300 hover:-translate-y-2 hover:scale-[1.07] hover:shadow-2xl">
+                        <div
+                            class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest animate-pulse">
                             🔥 Bán chạy nhất
                         </div>
                         <h3 class="font-bold text-gray-700 uppercase mb-4 text-sm tracking-widest">Premium Combo</h3>
-                        <div class="mb-6 flex gap-2 items-center justify-center bg-gradient-soft rounded-xl p-4" style="height: 200px;">
+                        <div class="mb-6 flex gap-2 items-center justify-center bg-gradient-soft rounded-xl p-4"
+                            style="height: 200px;">
                             <img src="images/pottyseat4.0.jpg" alt="Potty Seat" class="max-h-full w-1/2 object-contain">
                             <img src="images/ato.jpg" alt="Filter Showerhead" class="max-h-full w-1/2 object-contain">
                         </div>
                         <div class="text-2xl font-bold mb-4">Potty Seat + Filter Showerhead</div>
                         <div class="text-sm text-gray-600 mb-6">Combo chăm sóc toàn diện cho bé</div>
-                        <a href="#form" class="block py-4 bg-brand-blue text-white font-bold rounded-xl hover:bg-gray-700 transition-all shadow-lg mt-auto text-lg relative overflow-hidden group">
+                        <a href="#form"
+                            class="block py-4 bg-brand-blue text-white font-bold rounded-xl hover:bg-gray-700 transition-all shadow-lg mt-auto text-lg relative overflow-hidden group">
                             <span class="relative z-10">Mua Ngay - Giảm 30% →</span>
                             <div class="absolute inset-0 shimmer"></div>
                         </a>
                     </div>
                     <!-- Full -->
-                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center flex flex-col h-full transform hover:-translate-y-2 hover:ring-2 hover:ring-gray-300">
+                    <div
+                        class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center flex flex-col h-full transform hover:-translate-y-2 hover:ring-2 hover:ring-gray-300">
                         <h3 class="font-bold text-gray-500 uppercase mb-4 text-sm tracking-widest">Toàn diện</h3>
-                        <div class="mb-6 flex items-center justify-center bg-gradient-soft rounded-xl p-4" style="height: 200px;">
+                        <div class="mb-6 flex items-center justify-center bg-gradient-soft rounded-xl p-4"
+                            style="height: 200px;">
                             <div class="grid grid-cols-3 gap-2">
                                 <img src="images/f1.jpg" alt="Product 1" class="w-24 h-20 object-cover rounded">
                                 <img src="images/f2.jpg" alt="Product 2" class="w-24 h-20 object-cover rounded">
@@ -576,7 +680,9 @@
                         </div>
                         <div class="text-2xl font-bold mb-4">Full DURI Care Set</div>
                         <div class="text-sm text-gray-600 mb-6">Trọn bộ 6 sản phẩm cao cấp</div>
-                        <a href="#form" class="block py-4 border-2 border-brand-blue brand-blue font-bold rounded-xl hover:bg-brand-blue hover:text-white transition-all mt-auto text-lg">Xem Chi Tiết →</a>
+                        <a href="#form"
+                            class="block py-4 border-2 border-brand-blue brand-blue font-bold rounded-xl hover:bg-brand-blue hover:text-white transition-all mt-auto text-lg">Xem
+                            Chi Tiết →</a>
                     </div>
                 </div>
             </div>
@@ -588,28 +694,42 @@
                 <h2 class="text-2xl font-bold mb-10 text-center">Câu hỏi thường gặp (FAQ)</h2>
                 <div class="divide-y divide-gray-200">
                     <details class="py-4 group cursor-pointer">
-                        <summary class="flex justify-between items-center font-bold">Nắp có vừa với bồn cầu tiêu chuẩn không? <span class="group-open:rotate-180 transition">▼</span></summary>
-                        <p class="mt-4 text-gray-600 text-sm">Có, DURI Potty Seat được thiết kế chuẩn 300-470-80mm, tương thích với hầu hết các hãng bồn cầu lớn.</p>
+                        <summary class="flex justify-between items-center font-bold">Nắp có vừa với bồn cầu tiêu chuẩn
+                            không? <span class="group-open:rotate-180 transition">▼</span></summary>
+                        <p class="mt-4 text-gray-600 text-sm">Có, DURI Potty Seat được thiết kế chuẩn 300-470-80mm,
+                            tương thích với hầu hết các hãng bồn cầu lớn.</p>
                     </details>
                     <details class="py-4 group cursor-pointer">
-                        <summary class="flex justify-between items-center font-bold">Lõi lọc vòi sen bao lâu phải thay? <span class="group-open:rotate-180 transition">▼</span></summary>
-                        <p class="mt-4 text-gray-600 text-sm">Trung bình từ 2-4 tháng tùy vào chất lượng nước tại nơi bạn sinh sống.</p>
+                        <summary class="flex justify-between items-center font-bold">Lõi lọc vòi sen bao lâu phải thay?
+                            <span class="group-open:rotate-180 transition">▼</span>
+                        </summary>
+                        <p class="mt-4 text-gray-600 text-sm">Trung bình từ 2-4 tháng tùy vào chất lượng nước tại nơi
+                            bạn sinh sống.</p>
                     </details>
                     <details class="py-4 group cursor-pointer">
-                        <summary class="flex justify-between items-center font-bold">Sản phẩm có phù hợp cho trẻ sơ sinh không? <span class="group-open:rotate-180 transition">▼</span></summary>
-                        <p class="mt-4 text-gray-600 text-sm">Có. Vòi sen lọc nước dịu nhẹ cho da nhạy cảm và vật liệu an toàn không chứa BPA.</p>
+                        <summary class="flex justify-between items-center font-bold">Sản phẩm có phù hợp cho trẻ sơ sinh
+                            không? <span class="group-open:rotate-180 transition">▼</span></summary>
+                        <p class="mt-4 text-gray-600 text-sm">Có. Vòi sen lọc nước dịu nhẹ cho da nhạy cảm và vật liệu
+                            an toàn không chứa BPA.</p>
                     </details>
                     <details class="py-4 group cursor-pointer">
-                        <summary class="flex justify-between items-center font-bold">Lắp đặt có cần thợ không? <span class="group-open:rotate-180 transition">▼</span></summary>
-                        <p class="mt-4 text-gray-600 text-sm">Không cần. Tất cả đều có thể tự lắp trong vài phút theo hướng dẫn đi kèm.</p>
+                        <summary class="flex justify-between items-center font-bold">Lắp đặt có cần thợ không? <span
+                                class="group-open:rotate-180 transition">▼</span></summary>
+                        <p class="mt-4 text-gray-600 text-sm">Không cần. Tất cả đều có thể tự lắp trong vài phút theo
+                            hướng dẫn đi kèm.</p>
                     </details>
                     <details class="py-4 group cursor-pointer">
-                        <summary class="flex justify-between items-center font-bold">Chế độ bảo hành và đổi trả như thế nào? <span class="group-open:rotate-180 transition">▼</span></summary>
-                        <p class="mt-4 text-gray-600 text-sm">Bảo hành 24 tháng. Hỗ trợ đổi trả theo chính sách nếu sản phẩm có lỗi từ nhà sản xuất.</p>
+                        <summary class="flex justify-between items-center font-bold">Chế độ bảo hành và đổi trả như thế
+                            nào? <span class="group-open:rotate-180 transition">▼</span></summary>
+                        <p class="mt-4 text-gray-600 text-sm">Bảo hành 24 tháng. Hỗ trợ đổi trả theo chính sách nếu sản
+                            phẩm có lỗi từ nhà sản xuất.</p>
                     </details>
                     <details class="py-4 group cursor-pointer">
-                        <summary class="flex justify-between items-center font-bold">Thời gian giao hàng mất bao lâu? <span class="group-open:rotate-180 transition">▼</span></summary>
-                        <p class="mt-4 text-gray-600 text-sm">Thông thường từ 1-3 ngày làm việc tùy khu vực. Nội thành có thể nhận nhanh trong 24h.</p>
+                        <summary class="flex justify-between items-center font-bold">Thời gian giao hàng mất bao lâu?
+                            <span class="group-open:rotate-180 transition">▼</span>
+                        </summary>
+                        <p class="mt-4 text-gray-600 text-sm">Thông thường từ 1-3 ngày làm việc tùy khu vực. Nội thành
+                            có thể nhận nhanh trong 24h.</p>
                     </details>
                 </div>
             </div>
@@ -619,42 +739,58 @@
         <section id="form" class="py-24 lead-form-shell text-white">
             <div class="container mx-auto px-6 flex flex-col md:flex-row gap-16 items-center">
                 <div class="md:w-1/2 text-center md:text-left">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full lead-badge text-xs font-bold uppercase tracking-wider mb-5">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full lead-badge text-xs font-bold uppercase tracking-wider mb-5">
                         <span>Ưu tiên xử lý nhanh</span>
                     </div>
                     <h2 class="text-4xl font-bold mb-6">Đăng ký nhận tư vấn 1:1 miễn phí</h2>
-                    <p class="text-white/80 mb-10 text-lg">Điền form để nhận tư vấn đúng sản phẩm theo độ tuổi của bé. Chuyên gia DURI sẽ liên hệ trong 15 phút làm việc.</p>
+                    <p class="text-white/80 mb-10 text-lg">Điền form để nhận tư vấn đúng sản phẩm theo độ tuổi của bé.
+                        Chuyên gia DURI sẽ liên hệ trong 15 phút làm việc.</p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                         <div class="bg-white/10 border border-white/20 rounded-lg px-4 py-3">✓ Tư vấn đúng nhu cầu</div>
-                        <div class="bg-white/10 border border-white/20 rounded-lg px-4 py-3">✓ Báo giá ưu đãi theo khu vực</div>
-                        <div class="bg-white/10 border border-white/20 rounded-lg px-4 py-3">✓ Miễn phí vận chuyển toàn quốc</div>
+                        <div class="bg-white/10 border border-white/20 rounded-lg px-4 py-3">✓ Báo giá ưu đãi theo khu
+                            vực</div>
+                        <div class="bg-white/10 border border-white/20 rounded-lg px-4 py-3">✓ Miễn phí vận chuyển toàn
+                            quốc</div>
                         <div class="bg-white/10 border border-white/20 rounded-lg px-4 py-3">✓ Hỗ trợ sau mua hàng</div>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <button class="mt-8 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg">SHOP NOW ON SHOPEE</button>
+                        <button
+                            class="mt-8 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg">SHOP
+                            NOW ON SHOPEE</button>
                     </div>
                 </div>
                 <div class="md:w-1/2 w-full max-w-lg lead-form-card p-8 rounded-3xl">
                     <form id="duriLandingForm" class="text-gray-800">
                         <div class="text-center mb-6">
-                            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-900 text-white text-xs font-bold uppercase tracking-wider">Đăng ký nhận tư vấn</div>
-                            <p class="mt-3 text-sm text-gray-600">Vui lòng điền đầy đủ thông tin để đội ngũ DURI hỗ trợ nhanh nhất.</p>
+                            <div
+                                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-900 text-white text-xs font-bold uppercase tracking-wider">
+                                Đăng ký nhận tư vấn</div>
+                            <p class="mt-3 text-sm text-gray-600">Vui lòng điền đầy đủ thông tin để đội ngũ DURI hỗ trợ
+                                nhanh nhất.</p>
                         </div>
                         <div class="mb-4">
                             <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Họ và tên</label>
-                            <input type="text" name="name" required class="lead-input w-full px-4 py-3 rounded-lg outline-none" placeholder="Nhập họ và tên của bạn">
+                            <input type="text" name="name" required
+                                class="lead-input w-full px-4 py-3 rounded-lg outline-none"
+                                placeholder="Nhập họ và tên của bạn">
                         </div>
                         <div class="mb-4">
                             <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Số điện thoại</label>
-                            <input type="tel" name="phone" required class="lead-input w-full px-4 py-3 rounded-lg outline-none" placeholder="Ví dụ: 09xx xxx xxx">
+                            <input type="tel" name="phone" required
+                                class="lead-input w-full px-4 py-3 rounded-lg outline-none"
+                                placeholder="Ví dụ: 09xx xxx xxx">
                         </div>
                         <div class="mb-4">
                             <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Email</label>
-                            <input type="email" name="email" required class="lead-input w-full px-4 py-3 rounded-lg outline-none" placeholder="you@example.com">
+                            <input type="email" name="email" required
+                                class="lead-input w-full px-4 py-3 rounded-lg outline-none"
+                                placeholder="you@example.com">
                         </div>
                         <div class="mb-6">
                             <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Độ tuổi của bé</label>
-                            <select name="baby_age" required class="lead-input w-full px-4 py-3 rounded-lg outline-none">
+                            <select name="baby_age" required
+                                class="lead-input w-full px-4 py-3 rounded-lg outline-none">
                                 <option value="">Chọn độ tuổi</option>
                                 <option>0 - 6 tháng</option>
                                 <option>6 - 12 tháng</option>
@@ -664,8 +800,10 @@
                             </select>
                         </div>
                         <div class="mb-4">
-                            <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Sản phẩm quan tâm</label>
-                            <select name="product_interest" required class="lead-input w-full px-4 py-3 rounded-lg outline-none">
+                            <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Sản phẩm quan
+                                tâm</label>
+                            <select name="product_interest" required
+                                class="lead-input w-full px-4 py-3 rounded-lg outline-none">
                                 <option value="">Chọn sản phẩm</option>
                                 <option>Bô cho bé</option>
                                 <option>Khăn ướt cho bé</option>
@@ -678,27 +816,32 @@
                         </div>
                         <div class="mb-6">
                             <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Tỉnh/Thành phố</label>
-                            <select name="city" id="provinceCity" required class="lead-input w-full px-4 py-3 rounded-lg outline-none">
+                            <select name="city" id="provinceCity" required
+                                class="lead-input w-full px-4 py-3 rounded-lg outline-none">
                                 <option value="">Đang tải dữ liệu tỉnh/thành...</option>
                             </select>
                         </div>
-                        <button type="submit" class="w-full bg-brand-blue text-white py-4 rounded-lg font-bold text-lg hover:bg-gray-700 transition shadow-lg">
+                        <button type="submit"
+                            class="w-full bg-brand-blue text-white py-4 rounded-lg font-bold text-lg hover:bg-gray-700 transition shadow-lg">
                             Gửi Thông Tin Nhận Tư Vấn
                         </button>
-                        <p class="text-xs text-gray-500 mt-4 text-center">Thông tin của bạn được bảo mật và chỉ dùng để tư vấn sản phẩm.</p>
+                        <p class="text-xs text-gray-500 mt-4 text-center">Thông tin của bạn được bảo mật và chỉ dùng để
+                            tư vấn sản phẩm.</p>
                     </form>
                 </div>
             </div>
         </section>
 
         <!-- Section 10: Footer -->
-        <footer class="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-700 text-gray-200 pt-16 pb-10 border-t border-white/5">
+        <footer
+            class="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-700 text-gray-200 pt-16 pb-10 border-t border-white/5">
             <div class="container mx-auto px-6">
                 <div class="grid md:grid-cols-4 gap-10">
                     <div>
                         <div class="text-2xl font-bold text-white mb-4 tracking-tight">DURI</div>
                         <p class="text-sm text-gray-400 leading-relaxed mb-6">
-                            Đồng hành cùng cha mẹ Việt trong hành trình chăm sóc bé. Giải pháp an toàn, thông minh và tiện lợi cho gia đình hiện đại.
+                            Đồng hành cùng cha mẹ Việt trong hành trình chăm sóc bé. Giải pháp an toàn, thông minh và
+                            tiện lợi cho gia đình hiện đại.
                         </p>
                         <div class="flex flex-wrap gap-3">
                             <span class="px-3 py-1 rounded-full bg-white/10 text-xs text-gray-200">FDA Certified</span>
@@ -713,7 +856,9 @@
                             <div>Trụ sở chính: Busan, Hàn Quốc</div>
                             <div>Văn phòng đại diện: 669 Đỗ Mười, Phường Linh Xuân, TP. Thủ Đức (TP. HCM)</div>
                             <div>Hotline: 037.355.159</div>
-                            <div>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e3938291978d8691a393918690868d97cd808c8e">[email&#160;protected]</a></div>
+                            <div>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                    data-cfemail="e3938291978d8691a393918690868d97cd808c8e">[email&#160;protected]</a>
+                            </div>
                             <div>8:00 - 17:30 (Thứ 2 - Thứ 7)</div>
                         </div>
                     </div>
@@ -740,13 +885,16 @@
                 <div class="border-t border-white/10 mt-12 pt-8 text-center">
                     <div class="text-white font-semibold mb-4">Kết nối với chúng tôi</div>
                     <div class="flex justify-center gap-4 mb-6">
-                        <a href="#" aria-label="Facebook" class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition">
+                        <a href="#" aria-label="Facebook"
+                            class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition">
                             <img src="https://cdn.simpleicons.org/facebook/ffffff" alt="Facebook" class="w-5 h-5">
                         </a>
-                        <a href="#" aria-label="Instagram" class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition">
+                        <a href="#" aria-label="Instagram"
+                            class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition">
                             <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram" class="w-5 h-5">
                         </a>
-                        <a href="#" aria-label="Zalo" class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition">
+                        <a href="#" aria-label="Zalo"
+                            class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition">
                             <img src="https://cdn.simpleicons.org/zalo/ffffff" alt="Zalo" class="w-5 h-5">
                         </a>
                     </div>
@@ -757,23 +905,60 @@
     </div>
 
     <!-- PHẦN 13: THANK YOU PAGE (Ẩn mặc định) -->
-    <div id="thank-you-page" class="hidden fixed inset-0 bg-white z-[100] flex items-center justify-center p-6 text-center" style="display: none;">
+    <div id="thank-you-page"
+        class="hidden fixed inset-0 bg-white z-[100] flex items-center justify-center p-6 text-center"
+        style="display: none;">
         <div class="max-w-md">
             <div class="text-6xl mb-6">✨</div>
             <h2 class="text-3xl font-bold mb-4 text-gray-900">Cảm ơn bạn đã tin dùng DURI!</h2>
-            <p class="text-lg text-gray-600 mb-8 leading-relaxed">Yêu cầu của bạn đã được tiếp nhận. Chuyên gia DURI sẽ liên hệ tư vấn trong 15 phút tới.</p>
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed">Yêu cầu của bạn đã được tiếp nhận. Chuyên gia DURI sẽ
+                liên hệ tư vấn trong 15 phút tới.</p>
             <div class="bg-blue-50 p-6 rounded-2xl mb-8">
                 <p class="font-bold text-blue-600 mb-2">🎁 Ưu đãi đặc biệt:</p>
                 <p class="text-sm">Gia nhập cộng đồng "Smart Mom" để nhận các mẹo nuôi dạy con từ Hàn Quốc.</p>
-                <a href="#" class="mt-3 inline-block font-bold brand-blue underline underline-offset-4">Tham gia cộng đồng ngay</a>
+                <a href="#" class="mt-3 inline-block font-bold brand-blue underline underline-offset-4">Tham gia cộng
+                    đồng ngay</a>
             </div>
-            <button onclick="backToHome()" class="text-gray-400 hover:text-gray-600 transition font-medium">Quay lại trang chính</button>
+            <button onclick="backToHome()" class="text-gray-400 hover:text-gray-600 transition font-medium">Quay lại
+                trang chính</button>
         </div>
     </div>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 
 
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <!-- CHATBOX -->
+    <div id="chat-widget">
+
+        <button id="chat-toggle" onclick="toggleChat()">
+            <span id="chat-icon-open">💬</span>
+            <span id="chat-icon-close" style="display:none">✕</span>
+        </button>
+
+        <div id="chat-window" style="display:none">
+            <div id="chat-header">
+                <div id="chat-avatar">
+                    <img src="images/logoduri.jpg" alt="DURI" onerror="this.style.display='none'" />
+                </div>
+                <div style="flex:1">
+                    <div id="chat-name">DURI Assistant</div>
+                    <div id="chat-status">🟢 Đang hoạt động</div>
+                </div>
+                <!-- Nút X nằm trong header -->
+                <button id="chat-close-btn" onclick="toggleChat()">✕</button>
+            </div>
+
+            <div id="chat-messages"></div>
+
+            <!-- Câu hỏi gợi ý -->
+            <div id="chat-input-area">
+                <input id="chat-input" type="text" placeholder="Nhập câu hỏi của bạn..." />
+                <button id="chat-send" onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>
