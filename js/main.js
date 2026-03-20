@@ -204,11 +204,6 @@ document.getElementById("duriLandingForm").addEventListener("submit", async func
     thankYouPage.style.display = 'flex';
     window.scrollTo(0, 0);
 });
-// Hiện thank you page SAU KHI tất cả đã gửi xong
-mainContent.classList.add('hidden');
-thankYouPage.classList.remove('hidden');
-thankYouPage.style.display = 'flex';
-window.scrollTo(0, 0);
 
 // Gửi Google Sheet
 fetch(scriptURL, {
