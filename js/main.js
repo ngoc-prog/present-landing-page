@@ -155,7 +155,7 @@ updateReviewsCarousel();
 // ===== FORM SUBMIT =====
 const scriptURL = "https://script.google.com/macros/s/AKfycbxJUoFOdVCYpEeXFvp74sjL70hkjZapvjSoU3EYmrl0GiVWuG9bXi-XjV7BR_omZFq9/exec";
 const N8N_WEBHOOK = "https://durimallvn.app.n8n.cloud/webhook/b0666c6c-de60-4390-8ea3-970c4e47bd4d";
-const N8N_EMAIL_WEBHOOK = "https://durimallvn.app.n8n.cloud/webhook/duri-ai-email";
+const N8N_EMAIL_WEBHOOK = "https://durimallvn.app.n8n.cloud/webhook/a9b55e77-65e0-4e15-848b-eab842ab8fcf";
 
 document.getElementById("duriLandingForm").addEventListener("submit", async function (e) {
     e.preventDefault();
