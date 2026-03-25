@@ -153,7 +153,7 @@ window.addEventListener('resize', updateReviewsCarousel);
 updateReviewsCarousel();
 
 // ===== FORM SUBMIT =====
-const scriptURL = "https://script.google.com/macros/s/AKfycbxJUoFOdVCYpEeXFvp74sjL70hkjZapvjSoU3EYmrl0GiVWuG9bXi-XjV7BR_omZFq9/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbzLdcJ8-eGMYn40IWEB2FLEfqMAOm3YSYcxrTXAE0__k2itobpujC7rnXWRR8XTuKyI/exec";
 const N8N_EMAIL_WEBHOOK = "https://durimallvn.app.n8n.cloud/webhook/a9b55e77-65e0-4e15-848b-eab842ab8fcf";
 
 document.getElementById("duriLandingForm").addEventListener("submit", async function (e) {
