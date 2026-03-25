@@ -154,7 +154,6 @@ updateReviewsCarousel();
 
 // ===== FORM SUBMIT =====
 const scriptURL = "https://script.google.com/macros/s/AKfycbxJUoFOdVCYpEeXFvp74sjL70hkjZapvjSoU3EYmrl0GiVWuG9bXi-XjV7BR_omZFq9/exec";
-const N8N_WEBHOOK = "https://durimallvn.app.n8n.cloud/webhook/b0666c6c-de60-4390-8ea3-970c4e47bd4d";
 const N8N_EMAIL_WEBHOOK = "https://durimallvn.app.n8n.cloud/webhook/a9b55e77-65e0-4e15-848b-eab842ab8fcf";
 
 document.getElementById("duriLandingForm").addEventListener("submit", async function (e) {
@@ -184,11 +183,6 @@ document.getElementById("duriLandingForm").addEventListener("submit", async func
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(jsonData)
             }),
-            fetch(N8N_WEBHOOK, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ ...jsonData, timestamp: new Date().toLocaleString('vi-VN'), source: "DURI Landing Page" })
-            }),
             fetch(N8N_EMAIL_WEBHOOK, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -199,56 +193,6 @@ document.getElementById("duriLandingForm").addEventListener("submit", async func
         console.error("Lỗi webhook:", err);
     }
 
-    mainContent.classList.add('hidden');
-    thankYouPage.classList.remove('hidden');
-    thankYouPage.style.display = 'flex';
-    window.scrollTo(0, 0);
-});
-
-// Gửi Google Sheet
-fetch(scriptURL, {
-    method: "POST",
-    mode: "no-cors",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(jsonData)
-}).then(function () {
-    // Gửi n8n webhook
-    fetch(N8N_WEBHOOK, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-            name: jsonData.name,
-            phone: jsonData.phone,
-            email: jsonData.email,
-            baby_age: jsonData.baby_age,
-            product_interest: jsonData.product_interest,
-            city: jsonData.city,
-            timestamp: new Date().toLocaleString('vi-VN'),
-            source: "DURI Landing Page"
-        })
-    }).catch(err => console.log('n8n error:', err));
-    // Gửi n8n email webhook
-    fetch(N8N_EMAIL_WEBHOOK, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-            name: jsonData.name,
-            phone: jsonData.phone,
-            email: jsonData.email,
-            baby_age: jsonData.baby_age,
-            product_interest: jsonData.product_interest,
-            city: jsonData.city,
-            timestamp: new Date().toLocaleString('vi-VN'),
-            source: "DURI Landing Page"
-        })
-    }).catch(err => console.log('n8n email error:', err));
-
-    mainContent.classList.add('hidden');
-    thankYouPage.classList.remove('hidden');
-    thankYouPage.style.display = 'flex';
-    window.scrollTo(0, 0);
-}).catch(function (error) {
-    console.error("Lỗi gửi form:", error);
     mainContent.classList.add('hidden');
     thankYouPage.classList.remove('hidden');
     thankYouPage.style.display = 'flex';
@@ -290,7 +234,7 @@ async function getBotReply(userText) {
 }
 
 function renderQuickReplies() {
-    if (quickRepliesShown) return; // ← chỉ hiện 1 lần
+    if (quickRepliesShown) return;
     quickRepliesShown = true;
     const msgs = document.getElementById('chat-messages');
     const old = msgs.querySelector('.quick-replies-wrap');
@@ -392,7 +336,6 @@ async function sendMessage() {
     removeTyping();
     appendMessage('bot', reply);
 
-    // Chỉ hiện button khi bot mời điền form / để lại thông tin
     const formPhrases = [
         'để lại thông tin',
         'điền thông tin',
@@ -412,20 +355,20 @@ async function sendMessage() {
         appendFormButton();
     }
 }
+
 function appendFormButton() {
     const msgs = document.getElementById('chat-messages');
-
-    // Không thêm nếu đã có rồi
     if (msgs.querySelector('.chat-form-btn')) return;
 
     const btn = document.createElement('a');
     btn.href = '#form';
     btn.className = 'chat-form-btn';
     btn.textContent = '📋 Điền form nhận tư vấn ngay';
-    btn.onclick = () => toggleChat(); // đóng chat khi click
+    btn.onclick = () => toggleChat();
     msgs.appendChild(btn);
     msgs.scrollTop = msgs.scrollHeight;
 }
+
 async function sendQuick(text) {
     document.getElementById('chat-input').value = text;
     await sendMessage();
