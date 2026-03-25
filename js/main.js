@@ -153,7 +153,7 @@ window.addEventListener('resize', updateReviewsCarousel);
 updateReviewsCarousel();
 
 // ===== FORM SUBMIT =====
-const scriptURL = "https://script.google.com/macros/s/AKfycbzLdcJ8-eGMYn40IWEB2FLEfqMAOm3YSYcxrTXAE0__k2itobpujC7rnXWRR8XTuKyI/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbxNxpI3iMSlv7TqlMKfgxF38BseRd-yrKzVRGHvIt-9lLNeyYN1cgpc-FNRTjXxED4n/exec";
 const N8N_EMAIL_WEBHOOK = "https://durimallvn.app.n8n.cloud/webhook/a9b55e77-65e0-4e15-848b-eab842ab8fcf";
 
 document.getElementById("duriLandingForm").addEventListener("submit", async function (e) {
@@ -177,12 +177,6 @@ document.getElementById("duriLandingForm").addEventListener("submit", async func
 
     try {
         await Promise.allSettled([
-            fetch(scriptURL, {
-                method: "POST",
-                mode: "no-cors",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(jsonData)
-            }),
             fetch(N8N_EMAIL_WEBHOOK, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
